@@ -13,5 +13,6 @@ The comparasion for CPU and GPU version has been performed with GPU: AMD Radeon 
 #### Ahmed Shamsul Arefin, Regina Berretta, Pablo Moscato "On Ranking Nodes using kNN Graphs, Shortest-paths and GPUs"
 Includes implementation for solving centrality problem. Due to the inability to use data from the original article, testing graphs were generate in the same manner as for the previous article(see graph_generator.py).
 ![Image of centra results](https://github.com/sabrinamusatian/ShortestPathsWithGPU/blob/master/centrality_results.png)
+![Image of centra speedup results(https://github.com/sabrinamusatian/ShortestPathsWithGPU/blob/master/centrality_speedup_results.png)
 
 
