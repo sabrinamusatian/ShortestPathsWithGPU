@@ -10,7 +10,7 @@ class Dijkstra_gpu:
     def __init__(self, graph):
         self.gr = graph
 
-    def run(self):
+    def run(self, src):
         num_vert = self.gr.num_vert
         front = np.empty(num_vert).astype(np.int32)
         u = np.empty(num_vert, dtype=np.int32)
@@ -68,7 +68,6 @@ class Dijkstra_gpu:
         cl.enqueue_copy(queue, u, u_buf)
         cl.enqueue_copy(queue, dst, dst_buf)
         # choosing src
-        src = random.randint(0, num_vert - 1)
         u[src] = 0
         dst[src] = 0
         front[src] = 1
@@ -100,17 +99,4 @@ class Dijkstra_gpu:
             queue.finish()
             cl.enqueue_copy(queue, front, front_buf)
             cl.enqueue_copy(queue, u, u_buf)
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    graph = graph(5)
-    graph.create_edges()
-    file = open("graph1.txt", 'wb')
-    pickle.dump(graph, file)
-    dsk = Dijkstra_gpu(graph)
-    dsk.run()
+        return dst

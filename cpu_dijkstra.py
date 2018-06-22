@@ -7,12 +7,11 @@ class Dijkstra_cpu:
     def __init__(self, graph):
        self.gr = graph
 
-    def run(self):
+    def run(self, src):
         num_vert = self.gr.num_vert
         frontier = set()
         u = [True for i in range(num_vert)]
         dst = [max_val for i in range(num_vert)]
-        src = random.randint(0, num_vert - 1)
         frontier.add(src)
         u[src] = False
         dst[src] = 0
@@ -37,11 +36,4 @@ class Dijkstra_cpu:
                 if u[i] and dst[i] < min_val:
                     u[i] = False
                     frontier.add(i)
-
-if __name__ == '__main__':
-    graph = graph(2**20)
-    graph.create_edges()
-    file = open("graph1.txt", 'wb')
-    pickle.dump(graph, file)
-    dsk = Dijkstra_cpu(graph)
-    dsk.run()
+        return dst
