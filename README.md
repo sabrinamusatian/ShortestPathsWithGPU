@@ -2,7 +2,7 @@ Reimplementation of the algorithms from the following articles:
 * Hector Ortega-Arranz, Yuri Torres, Diego R. Llanos Ferraris, Arturo Gonzalez-Escribano "A New GPU-based Approach to the Shortest Path Problem"
 * Ahmed Shamsul Arefin, Regina Berretta, Pablo Moscato "On Ranking Nodes using kNN Graphs, Shortest-paths and GPUs"
 
-####Requirments:
+#### Requirments:
 python 3, pyopencl, numpy, matplotlib
 #### Hector Ortega-Arranz, Yuri Torres, Diego R. Llanos Ferraris, Arturo Gonzalez-Escribano "A New GPU-based Approach to the Shortest Path Problem"
 Includes the Dijkstra algorithm both for CPU(cpu_dijkstra.py) and GPU(cpu_dijkstra.py)
