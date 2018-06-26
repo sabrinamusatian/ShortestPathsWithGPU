@@ -10,7 +10,7 @@ For comparasion with boost: boost library, c++
 #### Hector Ortega-Arranz, Yuri Torres, Diego R. Llanos Ferraris, Arturo Gonzalez-Escribano "A New GPU-based Approach to the Shortest Path Problem"
 Includes the Dijkstra algorithm both for CPU(cpu_dijkstra.py) and GPU(cpu_dijkstra.py)
 
-For graph generation a helping script can be found in graph_generator.py. Also the exact versions of the graphs generated during the experiment may be founds in Data folder. All of the graphs are generated in a way to be a connected graphs with the average degree of the vertices equal to 7.
+For graph generation a helping script can be found in graph_generator.py. All of the graphs are generated in a way to be a connected graphs with the average degree of the vertices equal to 7.
 
 The GPU algorithm was compared to both naive CPU implementation of dijkstra(cpu_dijkstra.py) and an advanced parallel implementation from boost library. Usage of the boost library for this experiment may be found in Boost Dijkstra folder.
 The comparasion for CPU and GPU version has been performed with GPU: AMD Radeon R9 M370X and CPU: 2,8 GHz Intel Core i7 with the following results:
