@@ -10,7 +10,7 @@ Includes the Dijkstra algorithm both for CPU(cpu_dijkstra.py) and GPU(cpu_dijkst
 For graph generation a helping script can be found in graph_generator.py
 
 The comparasion for CPU and GPU version has been performed with GPU: AMD Radeon R9 M370X and CPU: 2,8 GHz Intel Core i7 with the following results:
-![Image of dijkstra results](https://github.com/sabrinamusatian/ShortestPathsWithGPU/blob/master/dijkstra_results.png)
+![Image of dijkstra results](https://github.com/sabrinamusatian/ShortestPathsWithGPU/blob/master/dijkstra_result.png)
 
 #### Ahmed Shamsul Arefin, Regina Berretta, Pablo Moscato "On Ranking Nodes using kNN Graphs, Shortest-paths and GPUs"
 Includes implementation for solving centrality problem. Due to the inability to use data from the original article, testing graphs were generate in the same manner as for the previous article(see graph_generator.py).
